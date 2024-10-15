@@ -49,92 +49,73 @@
 
 @media only screen and (max-width: 768px) {
   .header-content {
-    flex-direction: column; /* Sắp xếp theo cột để phù hợp với màn hình nhỏ */
+    flex-direction: column;
+    padding: 20px; /* Tăng padding để tránh mất chữ */
   }
 
-  .image-container {
-    flex: 0 0 150px; /* Giảm kích thước hình ảnh */
-  }
-
-  .bride-img, .groom-img {
-    width: 150px;
-    height: 150px;
+  .wedding-header {
+    padding: 20px; /* Giảm padding của khung tổng để có nhiều không gian hơn */
   }
 
   .wedding-announcement {
-    margin: 20px 10px;
-    padding: 15px;
-    font-size: 0.9em; /* Giảm font-size để phù hợp hơn với màn hình nhỏ */
+    font-size: 0.9em;
+    margin: 10px; /* Giảm margin xung quanh */
+    padding: 10px; /* Điều chỉnh padding */
+    max-width: 100%; /* Đảm bảo văn bản chiếm tối đa chiều rộng */
+  }
+
+  .wedding-announcement h1 {
+    font-size: 1.5em; /* Điều chỉnh để tránh chữ bị cắt */
+  }
+
+  .wedding-announcement h2, .wedding-announcement h4 {
+    font-size: 1.2em;
+  }
+
+  .wedding-announcement h3 {
+    font-size: 1em;
+  }
+
+  .wedding-announcement h5 {
+    font-size: 0.9em;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .image-container {
-    flex: 0 0 120px; /* Giảm kích thước hình ảnh cho màn hình nhỏ hơn */
-  }
-
-  .bride-img, .groom-img {
-    width: 120px;
-    height: 120px;
-  }
-
   .wedding-announcement {
-    margin: 15px 5px; /* Điều chỉnh lại margin và padding */
-    padding: 10px;
-    font-size: 0.8em; /* Giảm font-size thêm cho màn hình nhỏ */
+    font-size: 0.8em;
+    padding: 8px; /* Điều chỉnh padding nhỏ hơn */
   }
 
   .wedding-announcement h1 {
-    font-size: 1.4em; /* Điều chỉnh kích thước chữ */
+    font-size: 1.3em;
   }
 
-  .wedding-announcement h2,
-  .wedding-announcement h4 {
-    font-size: 1.2em;
-  }
-
-  .wedding-announcement h3 {
+  .wedding-announcement h2, .wedding-announcement h4 {
     font-size: 1em;
   }
 
-  .wedding-announcement h5 {
-    font-size: 0.9em;
+  .wedding-announcement h3, .wedding-announcement h5 {
+    font-size: 0.8em;
   }
 }
 
+/* Điều chỉnh thêm cho kích thước rất nhỏ */
 @media only screen and (max-width: 320px) {
-  .header-content {
-    padding: 20px 5px;
-  }
-
-  .image-container {
-    flex: 0 0 100px;
-  }
-
-  .bride-img, .groom-img {
-    width: 100px;
-    height: 100px;
-  }
-
   .wedding-announcement {
-    padding: 8px;
     font-size: 0.7em;
+    padding: 5px; /* Giảm padding hơn nữa */
   }
 
   .wedding-announcement h1 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
-  .wedding-announcement h2,
-  .wedding-announcement h4 {
-    font-size: 1em;
-  }
-
-  .wedding-announcement h3 {
+  .wedding-announcement h2, .wedding-announcement h4 {
     font-size: 0.9em;
   }
 
-  .wedding-announcement h5 {
-    font-size: 0.8em;
+  .wedding-announcement h3, .wedding-announcement h5 {
+    font-size: 0.7em;
   }
 }
