@@ -53,12 +53,12 @@ const events = [
       "Sau bao nhiêu ngày cũng nhau vượt qua bao nhiêu khó khăn, gian truân thì tụi mình đã kết thúc quá trình từ người yêu để trở thành vợ chồng",
     image: "/doi1.jpg",
   },
-  { image: "/anhcuoi1.jpg" },
-  { image: "/anhcuoi2.jpg" },
-  { image: "/anhcuoi3.jpg" },
-  { image: "/anhcuoi4.jpg" },
-  { image: "/anhcuoi5.jpg" },
-  { image: "/anhcuoi6.jpg" },
+  { image: "/anhcuoi1 - Copy.jpg" },
+  { image: "/anhcuoi2 - Copy.jpg" },
+  { image: "/anhcuoi3 - Copy.jpg" },
+  { image: "/anhcuoi4 - Copy.jpg" },
+  { image: "/anhcuoi5 - Copy.jpg" },
+  { image: "/anhcuoi6 - Copy.jpg" },
   { event: "Gửi quà cho chúng mình ở đây!", image: "/banking.jpg" },
   { image: "/thankyou.png" },
 ];
@@ -96,7 +96,7 @@ const App = () => {
         exit={{ opacity: 0 }}
       >
         <Header
-          bride={{ name: "Nguyễn Thanh Thu Hiền", image: "/hien.jpg" }}
+          bride={{ name: "Nguyễn Thanh Thu Hiền", image: "/hien - Copy.jpg" }}
           groom={{ name: "Lê Viết Cường", image: "/chure1.jpg" }}
         />
         <TimelineSection events={events} />
