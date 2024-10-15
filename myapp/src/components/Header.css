@@ -47,10 +47,13 @@
   max-width: 100%;
 }
 
-/* Responsive Design Adjustments */
 @media only screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column; /* Sắp xếp theo cột để phù hợp với màn hình nhỏ */
+  }
+
   .image-container {
-    flex: 0 0 150px; /* Giảm kích thước hình ảnh trên màn hình nhỏ hơn */
+    flex: 0 0 150px; /* Giảm kích thước hình ảnh */
   }
 
   .bride-img, .groom-img {
@@ -59,26 +62,53 @@
   }
 
   .wedding-announcement {
-    margin: 20px 10px; /* Điều chỉnh margin để phù hợp với màn hình nhỏ */
+    margin: 20px 10px;
     padding: 15px;
+    font-size: 0.9em; /* Giảm font-size để phù hợp hơn với màn hình nhỏ */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .image-container {
+    flex: 0 0 120px; /* Giảm kích thước hình ảnh cho màn hình nhỏ hơn */
+  }
+
+  .bride-img, .groom-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .wedding-announcement {
+    margin: 15px 5px; /* Điều chỉnh lại margin và padding */
+    padding: 10px;
+    font-size: 0.8em; /* Giảm font-size thêm cho màn hình nhỏ */
   }
 
   .wedding-announcement h1 {
-    font-size: 2em;
+    font-size: 1.4em; /* Điều chỉnh kích thước chữ */
   }
 
-  .wedding-announcement h2 {
-    font-size: 1.5em;
+  .wedding-announcement h2,
+  .wedding-announcement h4 {
+    font-size: 1.2em;
   }
 
-  .wedding-announcement p {
+  .wedding-announcement h3 {
     font-size: 1em;
+  }
+
+  .wedding-announcement h5 {
+    font-size: 0.9em;
   }
 }
 
 @media only screen and (max-width: 320px) {
+  .header-content {
+    padding: 20px 5px;
+  }
+
   .image-container {
-    flex: 0 0 100px; /* Giảm kích thước hình ảnh hơn nữa trên màn hình rất nhỏ */
+    flex: 0 0 100px;
   }
 
   .bride-img, .groom-img {
@@ -87,19 +117,24 @@
   }
 
   .wedding-announcement {
-    margin: 10px; /* Giảm margin để tăng không gian cho nội dung */
-    padding: 10px; /* Giảm padding cho phù hợp với kích thước nhỏ */
+    padding: 8px;
+    font-size: 0.7em;
   }
 
   .wedding-announcement h1 {
-    font-size: 1.5em;
-  }
-
-  .wedding-announcement h2 {
     font-size: 1.2em;
   }
 
-  .wedding-announcement p {
+  .wedding-announcement h2,
+  .wedding-announcement h4 {
+    font-size: 1em;
+  }
+
+  .wedding-announcement h3 {
     font-size: 0.9em;
+  }
+
+  .wedding-announcement h5 {
+    font-size: 0.8em;
   }
 }
