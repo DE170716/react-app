@@ -16,11 +16,11 @@ const Header = ({ bride, groom }) => {
             <h1>{groom.name}<br /> & <br /> {bride.name}</h1>
             <h4 className='vuquy'>HÔN LỄ ĐƯỢC HÀNH CỬ TẠI TÂN GIA <b>NỮ</b><br/> VÀO LÚC 16H30</h4>
             <h3 className='location_groom'>Tại nhà hàng Lang Châu</h3>
-            <h5 className="wedding-date">16.10.2023</h5>
+            <h5 className="wedding-date">16.10.2024</h5>
             <h4 className='vuquy'>HÔN LỄ ĐƯỢC HÀNH CỬ TẠI TÂN GIA <b>NAM</b><br/> VÀO LÚC 9H30</h4>
-            <h3 className='location_groom'>Tại đường Dương 10, thôn Dương Sơn, xã Hòa Châu, huyện Hòa Vang, TP.Đà Nẵng</h3>
-            <h5 className="wedding-date">19.10.2023</h5>
-            <p><b>Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi</b></p>
+            <h3 className='location_groom'>Tại đường Dương 10, thôn Dương Sơn, xã Hòa Châu, <br/>huyện Hòa Vang, TP.Đà Nẵng</h3>
+            <h5 className="wedding-date">19.10.2024</h5>
+            <p><b>Sự hiện diện của quý khách là niềm vinh hạnh <br/>của gia đình chúng tôi</b></p>
           </div>
           <div className="image-container">
             <img src={groom.image} alt="Groom" className="groom-img" />

@@ -5,7 +5,7 @@ import './TimelineSection.css';
 const TimelineSection = ({ events }) => {
   return (
     <section className="timeline-section">
-      <h2>Hành Trình Của Hiền Và Cường</h2>
+      <h2>Hành Trình Của<br/> Hiền Và Cường</h2>
       {events.map((event, index) => (
         <TimelineCard
           key={index}

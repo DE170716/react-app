@@ -1,5 +1,3 @@
-/* TimelineSection.css */
-
 .timeline-section {
   padding: 80px 40px;
   background-color: #f8f9fa;
@@ -19,6 +17,29 @@
   margin-bottom: 50px;
   color: #e74c3c;
   font-family: 'Great Vibes', cursive;
+}
+
+/* Responsive Design Adjustments */
+@media only screen and (max-width: 768px) {
+  .timeline-section {
+    padding: 40px 20px; /* Giảm padding trên màn hình nhỏ */
+  }
+
+  .timeline-section h2 {
+    font-size: 2.5em; /* Giảm kích thước font chữ cho tiêu đề */
+    margin-bottom: 30px; /* Giảm margin dưới tiêu đề */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .timeline-section {
+    padding: 20px 10px; /* Giảm thêm padding cho màn hình nhỏ hơn */
+  }
+
+  .timeline-section h2 {
+    font-size: 2em; /* Kích thước font chữ nhỏ hơn */
+    margin-bottom: 20px; /* Giảm margin dưới tiêu đề */
+  }
 }
 
 .timeline-section::before {
