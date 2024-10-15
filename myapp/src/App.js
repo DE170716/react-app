@@ -23,15 +23,19 @@ const createSparkles = () => {
   sparkleContainer.classList.add('sparkle-container');
   document.body.appendChild(sparkleContainer);
 
-  for (let i = 0; i < 100; i++) { // Tăng số lượng lấp lánh
+  for (let i = 0; i < 100; i++) { 
     const sparkle = document.createElement('div');
     sparkle.classList.add('sparkle');
-    sparkle.style.top = ${Math.random() * 100}vh;
-    sparkle.style.left = ${Math.random() * 100}vw;
-    sparkle.style.animationDelay = ${Math.random() * 5}s;
+    
+    // Sử dụng backticks để nhúng các biểu thức vào chuỗi
+    sparkle.style.top = `${Math.random() * 100}vh`;
+    sparkle.style.left = `${Math.random() * 100}vw`;
+    sparkle.style.animationDelay = `${Math.random() * 5}s`;
+    
     sparkleContainer.appendChild(sparkle);
   }
 };
+
 
 const App = () => {
   useEffect(() => {
